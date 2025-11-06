@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 ::selection {
-  background-color: #000000;
+  background-color: #ffffff;
   color: #000000;
 }
 
@@ -84,7 +84,7 @@ html {
 }
 
 .prose p {
-  @apply my-4 text-neutral-800 dark:text-neutral-200;
+  @apply my-4 text-neutral-200;
 }
 
 .prose h1 {
