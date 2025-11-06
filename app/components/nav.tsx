@@ -2,31 +2,47 @@ import Link from 'next/link'
 
 const navItems = {
   '/': {
-    name: 'home',
+    name: 'Home',
   },
-  '/blog': {
-    name: 'blog',
+  'https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1': {
+    name: 'My Projects',
   },
-  'https://vercel.com/templates/next.js/portfolio-starter-kit': {
-    name: 'deploy',
+  'https://github.com/ReyHey': {
+    name: 'GitHub',
   },
+  'https://www.linkedin.com/in/behzadshirzad1/': {
+    name: 'LinkedIn',
+  },
+  'https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1&': {
+    name: 'Resume',
+  },
+  'https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1&1': {
+    name: 'Fact of the day! ',
+  }
 }
 
 export function Navbar() {
   return (
-    <aside className="-ml-[8px] mb-16 tracking-tight">
-      <div className="lg:sticky lg:top-20">
+    // Removed the left negative margin so header aligns with page container
+    <header className="mb-6 tracking-tight">
+      {/* Stronger header bar: solid dark background, border, shadow and more padding */}
+      <div className="w-full lg:sticky lg:top-6 bg-neutral-800 dark:bg-neutral-900 border border-neutral-700/30 shadow-sm rounded-lg p-3">
         <nav
-          className="flex flex-row items-start relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
+          className="flex flex-row items-center justify-start gap-3 overflow-auto"
           id="nav"
         >
-          <div className="flex flex-row space-x-0 pr-10">
+          <div className="flex flex-row items-center space-x-2 pr-4">
             {Object.entries(navItems).map(([path, { name }]) => {
+              const isExternal = path.startsWith('http') || name === 'Resume';
+              const baseLinkClass = 'transition-colors duration-150 text-neutral-200 hover:text-white flex items-center relative py-1 px-3 text-sm rounded-md';
+
               return (
                 <Link
                   key={path}
                   href={path}
-                  className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
+                  target={isExternal ? '_blank' : undefined}
+                  rel={isExternal ? 'noopener noreferrer' : undefined}
+                  className={baseLinkClass}
                 >
                   {name}
                 </Link>
@@ -35,6 +51,6 @@ export function Navbar() {
           </div>
         </nav>
       </div>
-    </aside>
+    </header>
   )
 }
