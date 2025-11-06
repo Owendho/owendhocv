@@ -1,9 +1,9 @@
-export const baseUrl = 'https://portfolio-blog-starter.vercel.app'
+const BASE_URL = 'https://portfolio-blog-starter.vercel.app'
 
 export default async function sitemap() {
   return [
     {
-      url: `${baseUrl}/`,
+      url: BASE_URL,
       lastModified: new Date().toISOString().split('T')[0],
     },
   ]
