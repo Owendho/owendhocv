@@ -1,4 +1,6 @@
 @import 'tailwindcss';
+/* Tailwind v4: enable class-based dark mode via custom variant */
+@custom-variant dark .dark &;
 
 ::selection {
   background-color: #ffffff;

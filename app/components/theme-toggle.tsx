@@ -4,39 +4,36 @@ import { useEffect, useState } from 'react'
 
 export function ThemeToggle() {
   const [mounted, setMounted] = useState(false)
-  const [isDark, setIsDark] = useState(true)
+  const [isDark, setIsDark] = useState(false)
 
-  // Only run on client
+  // Initialise from localStorage or system preference, then sync DOM
   useEffect(() => {
     setMounted(true)
-    const isDarkMode = document.documentElement.classList.contains('dark')
-    setIsDark(isDarkMode)
+    try {
+      const stored = localStorage.getItem('theme') as 'dark' | 'light' | null
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+      const dark = stored ? stored === 'dark' : prefersDark
+      document.documentElement.classList.toggle('dark', dark)
+      document.documentElement.style.colorScheme = dark ? 'dark' : 'light'
+      setIsDark(dark)
+    } catch {
+      // Fail silently
+    }
   }, [])
 
-  const toggleTheme = () => {
-    console.log('Toggle clicked, current isDark:', isDark) // Debug log
-    
-    // Toggle the theme
-    const newIsDark = !isDark
-    setIsDark(newIsDark)
-    
-    // Update the DOM and localStorage
-    if (newIsDark) {
-      document.documentElement.classList.add('dark')
-      document.documentElement.style.colorScheme = 'dark'
-    } else {
-      document.documentElement.classList.remove('dark')
-      document.documentElement.style.colorScheme = 'light'
-    }
-    
-    localStorage.setItem('theme', newIsDark ? 'dark' : 'light')
-    console.log('Theme toggled to:', newIsDark ? 'dark' : 'light') // Debug log
+  function toggleTheme() {
+    const next = !isDark
+    document.documentElement.classList.toggle('dark', next)
+    document.documentElement.style.colorScheme = next ? 'dark' : 'light'
+    try { localStorage.setItem('theme', next ? 'dark' : 'light') } catch {}
+    setIsDark(next)
   }
 
   return (
     <button
       onClick={toggleTheme}
-      className="rounded-lg p-2 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
+      disabled={!mounted}
+      className="rounded-lg p-2 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors disabled:opacity-50"
       aria-label={isDark ? 'Switch to light theme' : 'Switch to dark theme'}
     >
       <svg
