@@ -6,7 +6,7 @@ import { Navbar } from './components/nav'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
-import BackgroundMatrix from './components/BackgroundMatrix'
+import VantaNet from './components/VantaNet'
 export const baseUrl = 'https://portfolio-blog-starter.vercel.app'
 
 export const metadata: Metadata = {
@@ -53,10 +53,10 @@ export default function RootLayout({
       )}
       suppressHydrationWarning
     >
-      <body className="antialiased max-w-4xl mx-4 mt-8 lg:mx-auto">
-        {/* Fixed animated background behind all content */}
-        <BackgroundMatrix />
-        <div className="relative z-10">
+  <body className="antialiased max-w-4xl mx-4 mt-8 lg:mx-auto" style={{ background: 'transparent' }}>
+  {/* Fixed animated Vanta.NET background behind all content */}
+  <VantaNet speed={0.1} />
+        <div className="relative z-10 bg-black px-6 py-8 md:px-12 md:py-10">
           <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
             <Navbar />
             {children}

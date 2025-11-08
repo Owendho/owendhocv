@@ -15,108 +15,109 @@ interface TimelineSection {
 
 const timelineData: TimelineSection[] = [
   {
-    title: "Work Experience",
+    title: "Erhvervserfaring",
     items: [
       {
-        title: "Lua Developer",
+        title: "Lua Udvikler",
         company: "RestedXP",
-        period: "Oct. 2025 – Present",
+        period: "Okt. 2025 – Nu",
         description: [
-          "Development and delivery of addon functionality for World of Warcraft",
-          "Working on guide optimization, performance, UX, and quality assurance with an international team"
+          "Udvikling og levering af addon-funktionalitet til World of Warcraft",
+          "Arbejder med guideoptimering, performance, UX og kvalitetssikring i et internationalt team"
         ]
       },
       {
-        title: "Lua Intern",
+        title: "Lua Praktikant",
         company: "RestedXP",
-        period: "Jul. 2025 – Oct. 2025",
+        period: "Jul. 2025 – Okt. 2025",
         description: [
-          "Developed functions and scripts for automating and setting up leveling flows",
-          "Contributed to debugging and improving user experience"
+          "Udviklede funktioner og scripts til automatisering og opsætning af leveling-flows",
+          "Bidrog til debugging og forbedring af brugeroplevelsen"
         ]
       },
       {
-        title: "Software Consultant",
+        title: "Software Konsulent",
         company: "Outlier.ai",
-        period: "Mar. 2025 – Oct. 2025",
+        period: "Mar. 2025 – Okt. 2025",
         description: [
-          "Evaluating generative AI and LLM output, performing code review, and co-developing production-ready code",
-          "Contributing to dataset and prompt design to improve model quality"
+          "Evaluering af generativ AI og LLM-output, kodegennemgang og medudvikling af produktionsklar kode",
+          "Bidrog til dataset- og promptdesign for at forbedre modelkvalitet"
         ]
       },
       {
-        title: "Intern",
+        title: "Praktikant",
         company: "Plain",
         location: "Aalborg",
-        period: "Feb. 2023 – May 2023",
+        period: "Feb. 2023 – Maj 2023",
         description: [
-          "Automation of insurance processes in an InsurTech platform",
-          "Developed and documented workflows that reduced manual processing",
-          "Worked in an agile team"
+          "Automatisering af forsikringsprocesser i en InsurTech-platform",
+          "Udviklede og dokumenterede workflows, der reducerede manuelt arbejde",
+          "Arbejdede i et agil udviklingsteam"
         ]
       },
       {
-        title: "Youth Employee",
+        title: "Ungarbejder",
         company: "IKEA",
         location: "Aalborg",
         period: "Mar. 2017 – Nov. 2019",
         description: [
-          "Customer service and operations in a fast-paced environment",
-          "Developed strong communication and collaboration skills"
+          "Kundeservice og drift i et travlt miljø",
+          "Udviklede stærke kommunikations- og samarbejdsevner"
         ]
       }
     ]
   },
   {
-    title: "Education",
+    title: "Uddannelse",
     items: [
       {
-        title: "Bachelor in Software Development",
+        title: "Bachelor i Softwareudvikling",
         company: "UCN",
         location: "Aalborg",
         period: "Sep. 2024 – Jun. 2026",
         description: [
-          "Software design, microservices, database architecture, system integration, and agile project management"
+          "Softwaredesign, mikroservices, databasearkitektur, systemintegration og agil projektledelse"
         ]
       },
       {
-        title: "Exchange Semester",
+        title: "Udvekslingssemester",
         company: "California State University",
         location: "Fullerton (USA)",
         period: "Jun. 2023 – Dec. 2023",
         description: [
-          "Courses in Python, Software Engineering, Professional Ethics, and Databases",
-          "Focus on teamwork and technical communication"
+          "Kurser i Python, Software Engineering, Professionel Etik og Databaser",
+          "Fokus på teamwork og teknisk kommunikation"
         ]
       },
       {
-        title: "Computer Science",
+        title: "Datamatiker",
         company: "UCN",
         location: "Aalborg",
         period: "Sep. 2022 – Jul. 2024",
         description: [
-          "Practical software development, object-oriented programming, API design, and project work in agile teams"
+          "Praktisk softwareudvikling, objektorienteret programmering, API-design og projektarbejde i agile teams"
         ]
       },
       {
         title: "Software Engineering",
-        company: "Aalborg University",
+        company: "Aalborg Universitet",
         period: "Sep. 2020 – Jul. 2022",
         description: [
-          "Early focus on system modeling, requirements specification, and software architecture"
+          "Tidligt fokus på systemmodellering, kravspecifikation og softwarearkitektur"
         ]
       },
       {
         title: "Gametech",
-        company: "Aalborg Technical High School",
+        company: "Aalborg Tekniske Gymnasium",
         period: "Jul. 2017 – Jun. 2020",
         description: [
-          "Game development, digital design, and practical applied programming"
+          "Spiludvikling, digitalt design og praktisk anvendt programmering"
         ]
       }
     ]
   }
 ];
+
 
 export function Timeline() {
   return (

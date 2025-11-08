@@ -1,6 +1,4 @@
 @import 'tailwindcss';
-/* Tailwind v4: enable class-based dark mode via custom variant */
-@custom-variant dark .dark &;
 
 ::selection {
   background-color: #ffffff;
@@ -35,88 +33,39 @@ html {
   min-width: 360px;
 }
 
+/* Removed Tailwind @apply directives due to build issues; restore minimal styling using raw CSS */
 .prose .anchor {
-  @apply absolute invisible no-underline;
-
+  position: absolute;
+  visibility: hidden;
+  text-decoration: none;
   margin-left: -1em;
   padding-right: 0.5em;
   width: 80%;
   max-width: 700px;
   cursor: pointer;
 }
-
-.anchor:hover {
-  @apply visible;
-}
-
-.prose a {
-  @apply underline transition-all decoration-neutral-400 dark:decoration-neutral-600 underline-offset-2 decoration-[0.1em];
-}
-
-.prose .anchor:after {
-  @apply text-neutral-300 dark:text-neutral-700;
-  content: '#';
-}
-
-.prose *:hover > .anchor {
-  @apply visible;
-}
-
+.prose .anchor:hover { visibility: visible; }
+.prose a { text-decoration: underline; transition: color .2s ease; }
+.prose .anchor:after { content: '#'; color: #999; }
 .prose pre {
-  @apply bg-neutral-50 dark:bg-neutral-900 rounded-lg overflow-x-auto border border-neutral-200 dark:border-neutral-900 py-2 px-3 text-sm;
+  background: #0f0f0f;
+  border: 1px solid #1f1f1f;
+  border-radius: .5rem;
+  overflow-x: auto;
+  padding: .75rem .9rem;
+  font-size: .9rem;
 }
-
-.prose code {
-  @apply px-1 py-0.5 rounded-lg;
-}
-
-.prose pre code {
-  @apply p-0;
-  border: initial;
-  line-height: 1.5;
-}
-
-.prose code span {
-  @apply font-medium;
-}
-
-.prose img {
-  /* Don't apply styles to next/image */
-  @apply m-0;
-}
-
-
-.prose p {
-  @apply my-4 text-neutral-200;
-}
-
-.prose h1 {
-  @apply text-4xl font-medium tracking-tight mt-6 mb-2;
-}
-
-.prose h2 {
-  @apply text-xl font-medium tracking-tight mt-6 mb-2;
-}
-
-.prose h3 {
-  @apply text-xl font-medium tracking-tight mt-6 mb-2;
-}
-
-.prose h4 {
-  @apply text-lg font-medium tracking-tight mt-6 mb-2;
-}
-
-.prose strong {
-  @apply font-medium;
-}
-
-.prose ul {
-  @apply list-disc pl-6;
-}
-
-.prose ol {
-  @apply list-decimal pl-6;
-}
+.prose code { padding: 2px 4px; border-radius: 4px; background: #1e1e1e; }
+.prose pre code { padding: 0; background: transparent; }
+.prose p { margin: 1rem 0; color: #c4c4c4; }
+.prose h1, .prose h2, .prose h3, .prose h4 { font-weight: 500; letter-spacing: -.5px; margin: 1.5rem 0 .5rem; }
+.prose h1 { font-size: 2.25rem; }
+.prose h2 { font-size: 1.4rem; }
+.prose h3 { font-size: 1.3rem; }
+.prose h4 { font-size: 1.15rem; }
+.prose strong { font-weight: 600; }
+.prose ul { list-style: disc; padding-left: 1.5rem; }
+.prose ol { list-style: decimal; padding-left: 1.5rem; }
 
 .prose > :first-child {
   /* Override removing top margin, causing layout shift */
@@ -150,4 +99,15 @@ table {
 
 .title {
   text-wrap: balance;
+}
+
+/* Ensure Vanta background never captures pointer events and stays below content */
+.vanta-net-bg,
+.vanta-net-bg * {
+  pointer-events: none !important;
+}
+.vanta-net-bg canvas {
+  position: absolute !important;
+  inset: 0;
+  z-index: 0 !important;
 }
