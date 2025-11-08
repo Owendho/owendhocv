@@ -26,8 +26,6 @@ export default function Footer() {
             target="_blank"
             href="/rss"
           >
-            <ArrowIcon />
-            <p className="ml-2 h-7">rss</p>
           </a>
         </li>
         <li>
@@ -37,8 +35,6 @@ export default function Footer() {
             target="_blank"
             href="https://github.com/ReyHey"
           >
-            <ArrowIcon />
-            <p className="ml-2 h-7">github</p>
           </a>
         </li>
       </ul>

@@ -23,9 +23,9 @@ export function Navbar() {
     // Removed the left negative margin so header aligns with page container
     <header className="mb-6 tracking-tight">
       {/* Stronger header bar: solid dark background, border, shadow and more padding */}
-      <div className="w-full lg:sticky lg:top-6 bg-neutral-800 dark:bg-neutral-900 border border-neutral-700/30 shadow-sm rounded-lg p-3">
+      <div className="w-full lg:sticky lg:top-6 bg-neutral-800 border border-neutral-700/30 shadow-sm rounded-lg p-3">
         <nav
-          className="flex flex-row items-center justify-start gap-3 overflow-auto"
+          className="flex flex-row items-center gap-3 overflow-auto"
           id="nav"
         >
           <div className="flex flex-row items-center space-x-2 pr-4">
@@ -46,6 +46,7 @@ export function Navbar() {
               )
             })}
           </div>
+          {/* Theme toggle removed: dark theme is permanent */}
         </nav>
       </div>
     </header>

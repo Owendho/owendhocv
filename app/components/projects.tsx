@@ -10,20 +10,33 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: 'Portfolio Website',
-    description: 'Personal portfolio built with Next.js, TypeScript, and Tailwind CSS.',
+    title: 'Portfolio Hjemmeside',
+    description: 'Personlig portfolio bygget med Next.js, TypeScript og Tailwind CSS.',
     link: 'https://github.com/ReyHey/reysanccvv',
     tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-    image: '/images/projects/HelloBananaWorld.jpg',
+    image: '/images/projects/Site.PNG',
   },
   {
-    title: 'Project Two',
-    description: 'Description of your second project.',
-    link: 'https://github.com/ReyHey/project-two',
-    tech: ['React', 'Node.js', 'MongoDB'],
-    image: '/images/projects/HelloBananaWorld.jpg',
+    title: 'Milo\'s Whisker Wonders',
+    description: 'Samarbejdsprojekt vi lavede som vores projekt til Software Engineering-klassen på Cal State Fullerton.',
+    link: 'https://miloswhiskerwonders.itch.io/milos-whisker-wonders',
+    tech: [ 'C#', 'Unity'],
+    image: '/images/projects/Milos.PNG',
   },
-  // Add more projects here
+  {
+    title: 'Mandelbrot Visualizer',
+    description: 'En Mandelbrot-visualizer bygget med Python til mit seneste hackathon i Aalborg (Hackathon #32).',
+    link: 'https://github.com/ReyHey/project-two',
+    tech: ['Python', 'NJit', 'PyGame', 'NumPy'],
+    image: '/images/projects/Mandelbrot.jpg',
+  },
+  {
+    title: 'World of Warcraft NPC navnegenerator',
+    description: 'Dette lille projekt var et script til at generere tilfældige NPC-navne til World of Warcraft ved hjælp af store SQL dumps fra spillet.',
+    link: 'https://github.com/ReyHey/NPCNamesGenerator',
+    tech: ['Python'],
+    image: '/images/projects/WoW.png',
+  },
 ];
 
 
