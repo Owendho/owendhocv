@@ -4,16 +4,13 @@ const navItems = {
   '/': {
     name: 'Home',
   },
-  'https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1': {
-    name: 'My Projects',
-  },
   'https://github.com/ReyHey': {
     name: 'GitHub',
   },
   'https://www.linkedin.com/in/behzadshirzad1/': {
     name: 'LinkedIn',
   },
-  'https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1&': {
+  '/images/projects/ReyResume.pdf': {
     name: 'Resume',
   },
   'https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1&1': {
