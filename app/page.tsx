@@ -1,4 +1,5 @@
 import { Projects } from './components/projects'
+import { Timeline } from './components/timeline'
 
 export default function Page() {
   return (
@@ -13,6 +14,7 @@ export default function Page() {
       </section>
       
       <Projects />
+      <Timeline />
     </div>
   )
 }

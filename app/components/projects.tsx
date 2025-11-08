@@ -17,13 +17,26 @@ const projects: Project[] = [
     image: '/images/projects/HelloBananaWorld.jpg',
   },
   {
-    title: 'Project Two',
+    title: 'Milo\'s Whisker Wonders',
+    description: 'Collaboration project we made as our project for Software Engineering class in Cal State Fullterton',
+    link: 'https://miloswhiskerwonders.itch.io/milos-whisker-wonders',
+    tech: ['React', 'Node.js', 'MongoDB'],
+    image: '/images/projects/Milos.PNG',
+  },
+  {
+    title: 'Mandelbrot Visualizer',
     description: 'Description of your second project.',
     link: 'https://github.com/ReyHey/project-two',
-    tech: ['React', 'Node.js', 'MongoDB'],
-    image: '/images/projects/HelloBananaWorld.jpg',
+    tech: ['Python', 'NJit', 'PyGame', 'NumPy'],
+    image: '/images/projects/Mandelbrot.jpg',
   },
-  // Add more projects here
+  {
+    title: 'World of Warcraft NPC name script',
+    description: 'This small project was a script to generate random NPC names for World of Warcraft using huge SQL dumps from the game.',
+    link: 'https://github.com/ReyHey/NPCNamesGenerator',
+    tech: ['React', 'Node.js', 'MongoDB'],
+    image: '/images/projects/WoW.png',
+  },
 ];
 
 
