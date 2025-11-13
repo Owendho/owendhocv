@@ -26,7 +26,7 @@ const projects: Project[] = [
   {
     title: 'Mandelbrot Visualizer',
     description: 'En Mandelbrot-visualizer bygget med Python til mit seneste hackathon i Aalborg (Hackathon #32).',
-    link: 'https://github.com/ReyHey/project-two',
+    link: 'https://github.com/ReyHey/Hackathon-Projects/tree/main/MandelBrotVisualizer',
     tech: ['Python', 'NJit', 'PyGame', 'NumPy'],
     image: '/images/projects/Mandelbrot.jpg',
   },
