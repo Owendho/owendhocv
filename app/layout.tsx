@@ -12,7 +12,7 @@ export const baseUrl = 'https://portfolio-blog-starter.vercel.app'
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Reys portfolio',
+    default: 'Owendhos portfolio',
     template: '%s | My Portfolio',
   },
   description: 'This is my portfolio.', 
