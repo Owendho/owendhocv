@@ -18,51 +18,32 @@ const timelineData: TimelineSection[] = [
     title: "Erhvervserfaring",
     items: [
       {
-        title: "Lua Udvikler",
-        company: "RestedXP",
-        period: "Okt. 2025 – Nu",
+        title: "Praktikant",
+        company: "Iqniter",
+        period: "Okt. 2025 – Nov. 2025",
         description: [
           "Udvikling og levering af addon-funktionalitet til World of Warcraft",
           "Arbejder med guideoptimering, performance, UX og kvalitetssikring i et internationalt team"
         ]
       },
       {
-        title: "Lua Praktikant",
-        company: "RestedXP",
-        period: "Jul. 2025 – Okt. 2025",
-        description: [
-          "Udviklede funktioner og scripts til automatisering og opsætning af leveling-flows",
-          "Bidrog til debugging og forbedring af brugeroplevelsen"
-        ]
-      },
-      {
-        title: "Software Konsulent",
-        company: "Outlier.ai",
-        period: "Mar. 2025 – Okt. 2025",
-        description: [
-          "Evaluering af generativ AI og LLM-output, kodegennemgang og medudvikling af produktionsklar kode",
-          "Bidrog til dataset- og promptdesign for at forbedre modelkvalitet"
-        ]
-      },
-      {
         title: "Praktikant",
-        company: "Plain",
+        company: "Plain Insure",
         location: "Aalborg",
         period: "Feb. 2023 – Maj 2023",
         description: [
           "Automatisering af forsikringsprocesser i en InsurTech-platform",
-          "Udviklede og dokumenterede workflows, der reducerede manuelt arbejde",
-          "Arbejdede i et agil udviklingsteam"
+          "Udviklede og dokumenterede workflows sammen med teamet, som reducerede manuel behandling og forbedrede effektiviteten i platformen",
         ]
       },
       {
-        title: "Ungarbejder",
-        company: "IKEA",
+        title: "Avisbud",
+        company: "Nordjyske,",
         location: "Aalborg",
-        period: "Mar. 2017 – Nov. 2019",
+        period: "Sep. 2025 – Nov. 2025",
         description: [
-          "Kundeservice og drift i et travlt miljø",
-          "Udviklede stærke kommunikations- og samarbejdsevner"
+          "Omdeling af aviser og reklamer.",
+          "Opnåede komtencer inden for selvstændigt arbejde."
         ]
       }
     ]
@@ -71,22 +52,12 @@ const timelineData: TimelineSection[] = [
     title: "Uddannelse",
     items: [
       {
-        title: "Bachelor i Softwareudvikling",
+        title: "Professionsbachelor i Softwareudvikling",
         company: "UCN",
         location: "Aalborg",
-        period: "Sep. 2024 – Jun. 2026",
+        period: "Sep. 2024 – Jan. 2026",
         description: [
-          "Softwaredesign, mikroservices, databasearkitektur, systemintegration og agil projektledelse"
-        ]
-      },
-      {
-        title: "Udvekslingssemester",
-        company: "California State University",
-        location: "Fullerton (USA)",
-        period: "Jun. 2023 – Dec. 2023",
-        description: [
-          "Kurser i Python, Software Engineering, Professionel Etik og Databaser",
-          "Fokus på teamwork og teknisk kommunikation"
+          "Softwaredesign, mikroservices, databasearkitektur, systemintegration og software sikkerhed"
         ]
       },
       {
@@ -103,7 +74,7 @@ const timelineData: TimelineSection[] = [
         company: "Aalborg Universitet",
         period: "Sep. 2020 – Jul. 2022",
         description: [
-          "Tidligt fokus på systemmodellering, kravspecifikation og softwarearkitektur"
+          "Tidligt fokus på imperativ programmering, datastruktur og algoritmer, og linear algebra"
         ]
       },
       {

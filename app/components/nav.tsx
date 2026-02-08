@@ -4,13 +4,13 @@ const navItems = {
   '/': {
     name: 'Home',
   },
-  'https://github.com/ReyHey': {
+  'https://github.com/Owendho': {
     name: 'GitHub',
   },
-  'https://www.linkedin.com/in/behzadshirzad1/': {
+  'https://www.linkedin.com/in/owendho-mboya/': {
     name: 'LinkedIn',
   },
-  '/images/projects/ReyResume.pdf': {
+  '/images/projects/Owendho-CV.pdf': {
     name: 'Resume',
   },
   'https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1&1': {

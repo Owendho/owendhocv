@@ -12,30 +12,16 @@ const projects: Project[] = [
   {
     title: 'Portfolio Hjemmeside',
     description: 'Personlig portfolio bygget med Next.js, TypeScript og Tailwind CSS.',
-    link: 'https://github.com/ReyHey/reysanccvv',
+    link: 'https://github.com/Owendho/owendhocv',
     tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-    image: '/images/projects/Site.PNG',
+    image: ""/*'/images/projects/Site.PNG'*/,
   },
   {
-    title: 'Milo\'s Whisker Wonders',
-    description: 'Samarbejdsprojekt vi lavede som vores projekt til Software Engineering-klassen på Cal State Fullerton.',
-    link: 'https://miloswhiskerwonders.itch.io/milos-whisker-wonders',
-    tech: [ 'C#', 'Unity'],
-    image: '/images/projects/Milos.PNG',
-  },
-  {
-    title: 'Mandelbrot Visualizer',
-    description: 'En Mandelbrot-visualizer bygget med Python til mit seneste hackathon i Aalborg (Hackathon #32).',
-    link: 'https://github.com/ReyHey/Hackathon-Projects/tree/main/MandelBrotVisualizer',
-    tech: ['Python', 'NJit', 'PyGame', 'NumPy'],
-    image: '/images/projects/Mandelbrot.jpg',
-  },
-  {
-    title: 'World of Warcraft NPC navnegenerator',
-    description: 'Dette lille projekt var et script til at generere tilfældige NPC-navne til World of Warcraft ved hjælp af store SQL dumps fra spillet.',
-    link: 'https://github.com/ReyHey/NPCNamesGenerator',
-    tech: ['Python'],
-    image: '/images/projects/WoW.png',
+    title: 'Distribueret System til træningsapp',
+    description: 'Samarbejdsprojekt som jeg lavede til Bachelor Eksamen i Softwareudkling hos UCN.',
+    link: 'https://github.com/Owendho/MicroserviceArchitectureBachelorProject',
+    tech: [ 'C#', 'Docker', "Docker Swarm", "Jaeger", "Prometheus", "RabbitMQ"],
+    image: ""/*'/images/projects/Milos.PNG'*/,
   },
 ];
 
