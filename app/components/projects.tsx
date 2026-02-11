@@ -21,7 +21,7 @@ const projects: Project[] = [
     description: 'Samarbejdsprojekt som jeg lavede til Bachelor Eksamen i Softwareudkling hos UCN.',
     link: 'https://github.com/Owendho/MicroserviceArchitectureBachelorProject',
     tech: [ 'C#', 'Docker', "Docker Swarm", "Jaeger", "Prometheus", "RabbitMQ"],
-    image: ""/*'/images/projects/Milos.PNG'*/,
+    image: '/images/projects/MicroserviceDiagram.PNG',
   },
 ];
 
