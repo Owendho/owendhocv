@@ -14,7 +14,14 @@ const projects: Project[] = [
     description: 'Personlig portfolio bygget med Next.js, TypeScript og Tailwind CSS.',
     link: 'https://github.com/Owendho/owendhocv',
     tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-    image: ""/*'/images/projects/Site.PNG'*/,
+    image: "/images/projects/apple-royalty-free.avif"/*'/images/projects/Site.PNG'*/,
+  },
+  {
+    title: 'E-commerce Hjemmeside',
+    description: 'E-commerce hjemmeside bygget med C#, TypeScript, React og CSS.',
+    link: 'https://github.com/Owendho/E-commerceProjectRemake',
+    tech: ['C#', 'TypeScript', 'React', 'CSS'],
+    image: "/images/projects/apple-royalty-free.avif",
   },
   {
     title: 'Distribueret System til træningsapp',
@@ -22,7 +29,7 @@ const projects: Project[] = [
     link: 'https://github.com/Owendho/MicroserviceArchitectureBachelorProject',
     tech: [ 'C#', 'Docker', "Docker Swarm", "Jaeger", "Prometheus", "RabbitMQ"],
     image: '/images/projects/MicroserviceDiagram.PNG',
-  },
+  },  
 ];
 
 
