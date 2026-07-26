@@ -14,7 +14,7 @@ const projects: Project[] = [
     description: 'Personlig portfolio bygget med Next.js, TypeScript og Tailwind CSS.',
     link: 'https://github.com/Owendho/owendhocv',
     tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-    image: "/images/projects/apple-royalty-free.avif"/*'/images/projects/Site.PNG'*/,
+    image: "/images/projects/portfolioIMG.JPG"/*'/images/projects/Site.PNG'*/,
   },
   {
     title: 'E-commerce Hjemmeside',
